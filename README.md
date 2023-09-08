@@ -1,6 +1,7 @@
 <p>The repository provides the material to reproduce the study "On the need to move from a single indicator to a multi-dimensional framework to measure accessibility to urban green" by A. Battiston and R. Schifanella. <br>
-Pre-print available [here](https://arxiv.org/abs/2308.05538).  <br>
-Explore the results through our [interactive web interface](http://atgreen.hpc4ai.unito.it/). <p>
+<a href="https://arxiv.org/abs/2308.05538">here</a>
+Pre-print available <a href="https://arxiv.org/abs/2308.05538">here</a>.  <br>
+Explore the results through our <a href="http://atgreen.hpc4ai.unito.it/">interactive web interface</a>. <p>
 
 
 ## Abstract
@@ -14,7 +15,7 @@ Python functions for the computation of the green accessibility indices.
 ### example_pipeline
 This directory contains the Jupyter Notebooks required to set up a green accessibility database mimicking the one used for the study. 
 The Notebooks should be ran in sequential order and require the installation of the functions contained in the **atgreen** directory.
-For the computation of the street-network distances, we make use of the matrix computation capabilities of [Open Source Routing Machine](https://github.com/Project-OSRM/osrm-backend) with its NodeJS Bindings. For a tutorial, please follow the instruction [here](https://gis-ops.com/osrm-nodejs-bindings/).
+For the computation of the street-network distances, we make use of the matrix computation capabilities of <a href="https://github.com/Project-OSRM/osrm-backend">Open Source Routing Machine</a> with its NodeJS Bindings. For a tutorial, please follow the instruction <a href="https://gis-ops.com/osrm-nodejs-bindings/">here</a> and paste the file at **resources_computation_distances** in the associated directory.
 
 
 
