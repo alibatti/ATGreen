@@ -14,12 +14,15 @@ Explore the results through our <a href="http://atgreen.hpc4ai.unito.it/">intera
 
 ### example
 <p> This directory contains the Jupyter Notebooks required to set up a green accessibility database mimicking the one used for the study. <br>
-The notebooks should be ran in sequential order and require the installation of the functions contained in the <b>atgreen</b> directory. <br>
+The notebooks should be run in sequential order and require the installation of the functions contained in the <b>atgreen</b> directory. <br>
 For the computation of the street-network distances, we make use of the matrix computation capabilities of <a href="https://github.com/Project-OSRM/osrm-backend">Open Source Routing Machine</a> with its NodeJS Bindings. For a tutorial, please follow the instruction <a href="https://gis-ops.com/osrm-nodejs-bindings/">here</a> and paste the file at <b>resources_computation_distances</b> in the associated directory. <p>
 
 <ul>
   <li> 00.01.01_DataSetup_DirectoriesSetup </li> Setup project-related directories. Input: PATH= main project directory </li>
-  <li> 00.01.02_DataSetup_DataBaseSetup </li> Setup project-related postgreSQL database. Input: PATH= main project directory </li>
+  <li> 00.01.02_DataSetup_DataBaseSetup </li> Setup project-related postgreSQL database. Input: PATH= main project directory; DB_NAME= database name; DB_USER= database user; ; DB_PASSWORD= database password; DB_HOST= database host; DB_PORT= database port.     </li>
+  <li> 00.01.03_DataSetup_Define_dictionaries </li> Define a set of dictionaries to be used throughout the data processing. Upload them to the database. Input: PATH= main project directory.    </li>
+  <li> 00.02.01_DataProcessing_CITIES_BOUNDARY </li> Upload the boundaries of the cities in the sample to the database. Save a unique shapefile in the PATH/boundary/ directory. Input: PATH= main project directory.  </li>
+  <li> 00.03.01_DataProcessing_GHS_POP_data </li> Get the population grid from a raster file. Input: PATH= main project directory.  </li>
 </ul>
 
 ## Data sources
