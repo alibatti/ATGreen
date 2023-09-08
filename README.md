@@ -10,7 +10,7 @@ With the recent expansion of urban greening interventions, the definition of spa
 ## Structure of the repository:
 
 ### atgreen
-Python functions for the computation of the green accessibility indices. 
+Python functions for the computation of the green accessibility indices.  
 
 ### example_pipeline
 This directory contains the Jupyter Notebooks required to set up a green accessibility database mimicking the one used for the study. 
