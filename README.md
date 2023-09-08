@@ -12,14 +12,14 @@ Explore the results through our <a href="http://atgreen.hpc4ai.unito.it/">intera
 ### atgreen
 <p> Python functions for the computation of the green accessibility indices. <p>  
 
-### example_pipeline
+### example
 <p> This directory contains the Jupyter Notebooks required to set up a green accessibility database mimicking the one used for the study. <br>
 The notebooks should be ran in sequential order and require the installation of the functions contained in the <b>atgreen</b> directory. <br>
 For the computation of the street-network distances, we make use of the matrix computation capabilities of <a href="https://github.com/Project-OSRM/osrm-backend">Open Source Routing Machine</a> with its NodeJS Bindings. For a tutorial, please follow the instruction <a href="https://gis-ops.com/osrm-nodejs-bindings/">here</a> and paste the file at <b>resources_computation_distances</b> in the associated directory. <p>
 
 <ul>
-  <li> 00.01.01_DataSetup_DirectoriesSetup </li>: Setup project-related directories. Input: PATH= main project directory </li>
-  <li> 00.01.02_DataSetup_DataBaseSetup </li>: Setup project-related postgreSQL database. Input: PATH= main project directory </li>
+  <li> 00.01.01_DataSetup_DirectoriesSetup </li> Setup project-related directories. Input: PATH= main project directory </li>
+  <li> 00.01.02_DataSetup_DataBaseSetup </li> Setup project-related postgreSQL database. Input: PATH= main project directory </li>
 </ul>
 
 ## Data sources
