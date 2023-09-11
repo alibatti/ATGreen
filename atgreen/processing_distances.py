@@ -77,7 +77,7 @@ def coords_vector_identification(df, len_vector, filename, folder_working):
     """
 
     #Step 1:
-    tmp=df[(df['walk_durations'].isnull()==True) & (df['walk_access']==1)].reset_index(drop=True)
+    tmp=df[(df['walk_durations'].isnull()==True)].reset_index(drop=True)
     tmp1=tmp[['long_source','lat_source','x_dest', 'y_dest']].groupby(['long_source','lat_source']).count().sort_values(by=['x_dest', 'y_dest'], ascending=False).reset_index().drop(columns=['x_dest', 'y_dest']).rename(columns={'long_source':'long','lat_source':'lat'})
 
     #Step 2:
@@ -163,7 +163,7 @@ def merge_one_run(df, subset,filename_input, working_folder):
     #Step 2:
     df=pd.merge(df, subset,left_on=['lat_source','long_source'],  right_on=['lat','long'], how='left').rename(columns={'index':'pos1'})
     df=pd.merge(df, subset, left_on=['lat_dest','long_dest'], right_on=['lat','long'], how='left').rename(columns={'index':'pos2'})
-    df=df[['x_source', 'y_source', 'lat_source', 'long_source','x_dest', 'y_dest', 'lat_dest', 'long_dest', 'pos1', 'pos2', 'walk_durations', 'walk_access_source', 'walk_access_dest', 'walk_access']]
+    df=df[['x_source', 'y_source', 'lat_source', 'long_source','x_dest', 'y_dest', 'lat_dest', 'long_dest', 'pos1', 'pos2', 'walk_durations']]
     #Step 3: 
     df=pd.merge(df, durations, on=['pos1', 'pos2'], how='left')
     df['walk_durations']=df['walk_durations'].fillna(df['value'])
@@ -171,7 +171,7 @@ def merge_one_run(df, subset,filename_input, working_folder):
     df=pd.merge(df, durations, left_on=['pos2', 'pos1'], right_on=['pos1', 'pos2'], how='left')
     df['walk_durations']=df['walk_durations'].fillna(df['value'])
     df=df.drop(columns=['value'])
-    df=df[['x_source', 'y_source', 'lat_source', 'long_source','x_dest', 'y_dest', 'lat_dest', 'long_dest', 'walk_durations', 'walk_access_source', 'walk_access_dest', 'walk_access']]
+    df=df[['x_source', 'y_source', 'lat_source', 'long_source','x_dest', 'y_dest', 'lat_dest', 'long_dest', 'walk_durations']]
     return df
 
 def osrm_files_deletion(filename_osm, filename_coords, filename_dur , working_folder):
