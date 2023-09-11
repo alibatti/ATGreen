@@ -1,4 +1,4 @@
-<p>The repository provides the material to reproduce the study "<i>On the need to move from a single indicator to a multi-dimensional framework to measure accessibility to urban green/i>" by A. Battiston and R. Schifanella. <br>
+<p>The repository provides the material to reproduce the study "<i>On the need to move from a single indicator to a multi-dimensional framework to measure accessibility to urban green</i>" by A. Battiston and R. Schifanella. <br>
 Pre-print available <a href="https://arxiv.org/abs/2308.05538">here</a>.  <br>
 Explore the results of the study through our <a href="http://atgreen.hpc4ai.unito.it/">interactive web interface</a>. <p>
 
