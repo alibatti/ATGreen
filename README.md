@@ -11,9 +11,9 @@ Explore the results of the study through our <a href="http://atgreen.hpc4ai.unit
 <p> Python functions for the computation of the green accessibility indices. <p>  
 
 #### analysis
-<p> Set of Jupyter notebooks to reproduce analysis presented in the manuscript. It requires running the data setup stored in the directory <b>data setup</b>. <p> 
+<p> Set of Jupyter notebooks to reproduce analysis presented in the manuscript. It requires running the data setup stored in the directory <b>example</b>. <p> 
 
-#### data setup
+#### example
 <p> This directory contains the Jupyter Notebooks required to set up a green accessibility database mimicking the one used for the study. <br>
 The notebooks should be run in sequential order and require the installation of the functions contained in the <b>atgreen</b> directory. <br>
 For the computation of the street-network distances, we make use of the matrix computation capabilities of <a href="https://github.com/Project-OSRM/osrm-backend">Open Source Routing Machine (OSRM)</a> with its NodeJS Bindings. For a tutorial, please follow the instruction <a href="https://gis-ops.com/osrm-nodejs-bindings/">here</a> and paste the file at <b>resources_computation_distances</b> in the associated directory. <p>
