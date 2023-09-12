@@ -573,7 +573,7 @@ def query4grid(city: str, db_params: dict):
 def query4grid_unmasked(city: str, db_params: dict):
     
     """
-    Extract polygon of ESA data for selected land cover codes and perform unary_union of all adjacent geometries
+    Extract pixel from raster, unmasked
     ------------------------------------------------------- 
     
     Parameters:
